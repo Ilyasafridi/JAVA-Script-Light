@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('Image Folder/image.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+        
+        button {
+            border: none;
+            color: white;
+            background-color: rgb(78, 73, 65);
+            width: 20%;
+            height: 60px;
+            border-radius: 20px;
+            font-size: 25px;
+        }
+
+        button:active {
+            color: black;
+            background-color: white;
+        }
+
+
+        @media (max-width: 1200px) {
+             button {
+                width: 60%;
+                height: 60px;
+            }
+            
+            #img {
+                height: 440px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <img src="Image Folder/light(10).png" alt="" id="img" width="30%" height="350px">
+
+    <br><br>
+
+    <button onclick="lightOn()"> LIGHT ON </button> <br><br>
+    <button onclick="lightOf()"> LIGHT OF </button> 
+    </center>
+
+</body>
+
+<script>
+function lightOn() {
+    document.getElementById('img').src = 'Image Folder/light(11).png'
+}
+function lightOf() {
+    document.getElementById('img').src = 'Image Folder/light(10).png'
+}
+</script>
+</html>
+
